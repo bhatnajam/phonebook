@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>New Contact</title>
+	<link rel="stylesheet" type="text/css" href="new.css">
 </head>
 <body>
-	<h1>New contact form</h1>
-
-	<h1>this is a test change</h1>
+	<ul>
+		<li><a href="index.php">Home</a></li>
+		<li><a href="list.php">Show Contacts</a></li>
+	</ul>
+	<h1>ADD NEW CONTACT</h1>
+	<div class="outerdiv">
+		<form action ="contactsaved.php" method="post" onsubmit="return validation()">
+			<div class="outerinputdiv">
+				<div class="inputdiv">
+					<input class="inputs" type="text" name="fullname" placeholder="FullName" >
+				</div>
+				<div class="inputdiv">
+					<input  class="inputs" type="text" name="phonenumber" placeholder="PhoneNumber" >
+				</div>
+				<div class="inputdiv">
+					<input  class="inputs" type="text" name="altphonenumber" placeholder="AlternatePhoneNumber" >
+				</div>
+				<div class="inputdiv">
+					<input class="inputs" type="email" name="emailid" placeholder="Email" >
+				</div>
+				<div id="error_messages" class="inputdiv"></div>
+				<div class="inputdiv">
+					<input  class="inputs" id="sub" type="submit" value="SAVE">
+				</div>
+			</div>
+			
+		</form>
+	</div>
+	<script type="text/javascript" src="new.js"></script>	
 </body>
 </html>

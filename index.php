@@ -2,11 +2,15 @@
 <html>
 <head>
 	<title>Phone Book</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-
-	<a href="new.html">NEW CONTACT</a>
-	<a href="list.php">SHOW ALL CONTACTS</a>
+	<h1>Welcome to the Phonebook Application.</h1>
+	<div class="maindiv">
+		<a href="new.php">Add New Contact</a>
+		<a href="list.php">Show my Contacts</a>
+	</div>
+	
 
 </body>
 </html>

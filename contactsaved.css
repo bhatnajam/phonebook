@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+}
+h1{
+	text-align: center;
+	background-color: lightblue;
+	margin: 0px;
+	height: 70px;
+	padding-top: 30px;
+	color:navy;
+	font-family: Castellar;
+}
+.maindiv{
+	height: 508px;
+	background-color: rgb(24,103,57);
+}
+.maindiv a{
+	text-decoration:none;
+	display: inline-block;
+	background-color:rgb(24,103,57);
+	color: rgb(0,0,0);
+	font-size: 20px;
+	width: auto;
+	position: relative;
+	left: 35%;
+	padding: 20px 30px;
+	border:solid 2px white;
+}
+span{
+	display: block;
+	background-color: green;
+	text-align: center;
+	padding: 10px 0px;
+	font-size: 25px;
+	color: tomato;
+}
