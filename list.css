@@ -46,3 +46,16 @@ table th {
   background-color: #4CAF50;
   color: white;
 }
+form #del{
+	width: 150px;
+	position: relative;
+	left: 40%;
+	height: 40px;
+	border: solid 2px navy;
+	background-color: lightgreen;
+	font-weight: bold;
+}
+#del:hover{
+	background-color: lightblue;
+	font-size: 25px;
+}

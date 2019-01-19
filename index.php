@@ -9,6 +9,9 @@
 	<div class="maindiv">
 		<a href="new.php">Add New Contact</a>
 		<a href="list.php">Show my Contacts</a>
+		<a href="deletecontact.php">Delete Conatact</a>
+		<a href="editcontact.php">Edit Conatact</a>
+
 	</div>
 	
 

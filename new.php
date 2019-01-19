@@ -8,6 +8,10 @@
 	<ul>
 		<li><a href="index.php">Home</a></li>
 		<li><a href="list.php">Show Contacts</a></li>
+		<li><a href="new.php">Add New Contact</a></li>
+		<li><a href="deletecontact.php">Delete Contact</a></li>
+		<li><a href="editcontact.php">Edit Conatact</a></li>
+
 	</ul>
 	<h1>ADD NEW CONTACT</h1>
 	<div class="outerdiv">

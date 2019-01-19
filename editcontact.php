@@ -1,4 +1,3 @@
-
 <?php
 	$con     =   mysqli_connect ('localhost','root');
 	mysqli_select_db ($con,'mydb1');
@@ -11,7 +10,7 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>Your Contacts</title>
+		<title>Edit Contacts</title>
 		<link rel="stylesheet" type="text/css" href="list.css">
 	</head>
 	<body>
@@ -22,6 +21,7 @@
 			<li><a href="editcontact.php">Edit Conatact</a></li>
 		</ul>
 		<h1>Your Saved Contacts.</h1>
+		<form action="editition.php" method="post">
 		<table>
 			<tr>
 					<th>SNO.</th>
@@ -35,17 +35,18 @@
 						$row=mysqli_fetch_array($result);
 				?>
 				<tr>
-					<td><?php echo $row['id'];?></td>
-					<td><?php echo $row['fullname'];?></td>
-					<td><?php echo $row['phone'];?></td>
-					<td><?php echo $row['alternate_phone'];?></td>
-					<td><?php echo $row['email'];?></td>
+					<td><?php echo $row['id'];?><input type="hidden" name="id<?php echo $i;?>" value="<?php echo $row['id'];?>"></td>
+					<td><input class="editinput" type="text" name="fullname<?php echo $i;?>" value="<?php echo $row['fullname'];?>"></td>
+					<td><input class="editinput" type="text" name="phone<?php echo $i;?>" value="<?php echo $row['phone'];?>"></td>
+					<td><input  class="editinput" type="text" name="alternate_phone<?php echo $i;?>" value="<?php echo $row['alternate_phone'];?>"></td>
+					<td><input  class="editinput" type="text" name="email<?php echo $i;?>" value="<?php echo $row['email'];?>"></td>
 				</tr>
 				<?php	
 					}
 				?>
 		</table>
+		<input  id="del" type="submit" value="EDIT">
+		</form>
 	</body>
 	</html>
-	
 	
