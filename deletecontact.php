@@ -19,6 +19,8 @@
 			<li><a href="new.php">Add New Contact</a></li>
 			<li><a href="deletecontact.php">Delete Contacts</a></li>
 			<li><a href="editcontact.php">Edit Conatact</a></li>
+			<li><a href="searchForm.php">Search Conatact</a></li>
+			<li><a href="list.php">Show my Contacts</a></li>
 		</ul>
 		<h1>Your Saved Contacts.</h1>
 		<form action="deletion.php" method="post">

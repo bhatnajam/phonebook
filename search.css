@@ -1,5 +1,14 @@
 body{
-	margin: 0;
+	margin:0;
+}
+h1{
+	text-align: center;
+	background-color: lightblue;
+	margin: 0px;
+	height: 70px;
+	padding-top: 30px;
+	color:navy;
+	font-family: Castellar;
 }
 ul{
 	list-style-type: none;
@@ -22,41 +31,31 @@ li a{
 li a:hover {
   background-color: #111;
 }
-h1{
+.container{
+	margin-left: 40%;
+	margin-top: 12%;
+}
+.sinput{
+	padding: 3px 3px;
+	width: 250px;
+	height: 30px;
+	margin-top: 1%;
+	border: solid 2px lightblue;
+	border-radius: 5px;
 	background-color: lightblue;
-	margin: 0;
-	text-align: center;
-	color:navy;
-	padding:10px 0;
 }
-table{
-	border-collapse: collapse;
-	width: 100%;
-	height: auto;
-}
-td,th{
-	border: solid 1px #ddd;
-	padding: 8px;
-}
-table tr:nth-child(even){background-color: #f2f2f2;}
-table tr:hover {background-color: #ddd;}
-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
-}
-form #del{
+.ssubmit{
+	display: block;
+	margin-top: 1%;
 	width: 150px;
 	position: relative;
-	left: 40%;
+	left: 60px;
 	height: 40px;
 	border: solid 2px navy;
 	background-color: lightgreen;
 	font-weight: bold;
 }
-#del:hover{
+.ssubmit:hover{
 	background-color: lightblue;
 	font-size: 25px;
 }

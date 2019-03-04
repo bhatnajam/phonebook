@@ -3,9 +3,15 @@
 	$phone    = $_POST['phonenumber'];
 	$altphone = $_POST['altphonenumber'];
 	$email    = $_POST['emailid'];
+	$file     = $_FILES['myfile'];
+	$filename = $file['name'];
+	/**
+	file upload code
+	**/
+	move_uploaded_file($file['tmp_name'],"uploads/images/".$file['name']);
 	$con      = mysqli_connect('localhost','root');
 	mysqli_select_db($con,'mydb1');
-	$q        =   "INSERT INTO contacts (fullname,phone,alternate_phone,email) values ('$name','$phone','$altphone','$email')";
+	$q        =   "INSERT INTO contacts (fullname,phone,alternate_phone,email,profile_picture) values ('$name','$phone','$altphone','$email','$filename')";
 	mysqli_query($con,$q);
 	mysqli_close($con);
 	header("Location:list.php");

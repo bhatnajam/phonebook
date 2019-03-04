@@ -1,0 +1,85 @@
+function effect(){
+	var x=document.getElementsByTagName('input');
+	
+		x[0].style.backgroundColor="white";
+		x[1].style.backgroundColor="white";
+		x[2].style.backgroundColor="white";
+		x[3].style.backgroundColor="white";
+		x[0].style.border="solid 2px lightblue";
+		x[1].style.border="solid 2px lightblue";
+		x[2].style.border="solid 2px lightblue";
+		x[3].style.border="solid 2px lightblue";
+		
+
+}
+	function effectback()
+	{
+		var x=document.getElementsByTagName('input');
+	
+		x[0].style.backgroundColor="lightblue";
+		x[1].style.backgroundColor="lightblue";
+		x[2].style.backgroundColor="lightblue";
+		x[3].style.backgroundColor="lightblue";
+	
+	}
+	function validation(){
+		var result=true;
+		var x=document.getElementsByTagName("input");
+		if (x[0].value.length==0||x[1].value.length==0||x[2].value.length==0||x[3].value.length==0) {
+			if(x[0].value.length==0)
+				x[0].style.border="solid 2px red";
+			if(x[1].value.length==0)
+				x[1].style.border="solid 2px red";
+			if(x[2].value.length==0)
+				x[2].style.border="solid 2px red";
+			if(x[3].value.length==0)
+				x[3].style.border="solid 2px red";
+			result=false;
+		}
+		if (x[2].value.length<9) {
+			if(x[2].value.length<9)
+				x[2].style.border="solid 2px red";
+			result=false;
+
+		}
+		if (x[2].value!=x[3].value) {
+			if(x[2].value!=x[3].value){
+				x[2].style.border="solid 2px red";
+				x[3].style.border="solid 2px red";
+			}
+			result=false;
+		}
+		if (x[0].value.length==0||x[1].value.length==0||x[2].value.length==0||x[3].value.length==0){
+			var para=document.createElement('p');
+			var node=document.createTextNode("oops!you left one or more fields empty");
+			para.appendChild(node);
+			var parent=document.getElementById('maindiv1');
+			var child=document.getElementById('sub1');
+			parent.insertBefore(para,child);
+		}
+		return result;
+		
+}
+
+$rows    =   mysqli_fetch_all($result,MYSQLI_ASSOC);
+foreach ($rows as $row) {
+		echo $row['fullname']." ".$row['phone']." ".$row['alternate_phone']." ".$row['email'];
+	}
+
+
+
+
+if($result) 
+   {    
+      while($row=mysqli_fetch_row($result))   
+       {
+                
+          echo $row[0],$row[1],$row[2];   
+       }    
+     }
+   else
+     { 
+       echo "No result";  
+     }
+
+		

@@ -35,6 +35,7 @@
 		<a href="list.php">Show my Contacts</a>
 		<a href="deletecontact.php">Delete Contacts</a>
 		<a href="editcontact.php">EditContacts</a>
+		<a href="searchForm.php">Search Conatact</a> 
 
 	</div>
 </body>

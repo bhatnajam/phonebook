@@ -11,7 +11,7 @@
 		<a href="list.php">Show my Contacts</a>
 		<a href="deletecontact.php">Delete Conatact</a>
 		<a href="editcontact.php">Edit Conatact</a>
-
+		<a href="searchForm.php">Search Conatact</a> 
 	</div>
 	
 
